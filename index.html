@@ -10,16 +10,16 @@
 <body>
     <h3 style="margin:10px; text-align: center;">
         ご連絡ありがとうございます。<br>
-        訪問日のご希望を承ります。
+        訪問日時のご希望を承ります。
     </h3>
     <form class="w-75 mx-auto">
         <p class="mt-3">お名前</p>
         <div>
             <input class="form-control w-100 mt-1" name="name" placeholder="" required>
         </div>
-        <p class="mt-3">第１希望日</p>
+        <p class="mt-3">第１希望日時</p>
         <div>
-            <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="month1" style="width:40%;">
+            <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="month1" style="width:25%;">
                 <option value="1">1月</option>
                 <option value="2">2月</option>
                 <option value="3">3月</option>
@@ -34,7 +34,7 @@
                 <option value="12">12月</option>
             </select>
             &nbsp;&nbsp;            
-            <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="day1" style="width:40%;">
+            <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="day1" style="width:25%;">
                 <option value="1">1日</option>
                 <option value="2">2日</option>
                 <option value="3">3日</option>
@@ -66,11 +66,19 @@
                 <option value="29">29日</option>
                 <option value="30">30日</option>
                 <option value="31">31日</option>
-            </select>  
+            </select>
+            &nbsp;&nbsp;
+            <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="hour1" style="width:40%;">
+                <option value="am">午前中</option>
+                <option value="pm0-2">12時～14時</option>
+                <option value="pm2-4">14時～16時</option>
+                <option value="pm4-6">16時～18時</option>
+                <option value="pm6-8">18時～20時</option>
+            </select>
         </div>
-        <p class="mt-3">第２希望日</p>
+        <p class="mt-3">第２希望日時</p>
         <div>
-            <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="month2" style="width:40%;">
+            <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="month2" style="width:25%;">
                 <option value="1">1月</option>
                 <option value="2">2月</option>
                 <option value="3">3月</option>
@@ -85,7 +93,7 @@
                 <option value="12">12月</option>
             </select>
             &nbsp;&nbsp;            
-            <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="day2" style="width:40%;">
+            <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="day2" style="width:25%;">
                 <option value="1">1日</option>
                 <option value="2">2日</option>
                 <option value="3">3日</option>
@@ -117,18 +125,26 @@
                 <option value="29">29日</option>
                 <option value="30">30日</option>
                 <option value="31">31日</option>
-            </select>  
+            </select>
+            &nbsp;&nbsp;
+            <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="hour2" style="width:40%;">
+                <option value="am">午前中</option>
+                <option value="pm0-2">12時～14時</option>
+                <option value="pm2-4">14時～16時</option>
+                <option value="pm4-6">16時～18時</option>
+                <option value="pm6-8">18時～20時</option>
+            </select>
         </div>
-        <p class="mt-3">第３希望日</p>
+        <p class="mt-3">第３希望日時</p>
         <div>
-            <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="month3" style="width:40%;">
+            <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="month3" style="width:25%;">
                 <option value="1">1月</option>
                 <option value="2">2月</option>
                 <option value="3">3月</option>
                 <option value="4">4月</option>
                 <option value="5">5月</option>
                 <option value="6">6月</option>
-                <option value="7">7月</option>
+                <option value="7" selected>7月</option>
                 <option value="8">8月</option>
                 <option value="9">9月</option>
                 <option value="10">10月</option>
@@ -136,7 +152,7 @@
                 <option value="12">12月</option>
             </select>
             &nbsp;&nbsp;            
-            <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="day3" style="width:40%;">
+            <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="day3" style="width:25%;">
                 <option value="1">1日</option>
                 <option value="2">2日</option>
                 <option value="3">3日</option>
@@ -151,7 +167,7 @@
                 <option value="12">12日</option>
                 <option value="13">13日</option>
                 <option value="14">14日</option>
-                <option value="15">15日</option>
+                <option value="15" selected>15日</option>
                 <option value="16">16日</option>
                 <option value="17">17日</option>
                 <option value="18">18日</option>
@@ -168,7 +184,15 @@
                 <option value="29">29日</option>
                 <option value="30">30日</option>
                 <option value="31">31日</option>
-            </select>  
+            </select>
+            &nbsp;&nbsp;
+            <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="hour3" style="width:40%;">
+                <option value="am">午前中</option>
+                <option value="pm0-2">12時～14時</option>
+                <option value="pm2-4">14時～16時</option>
+                <option value="pm4-6">16時～18時</option>
+                <option value="pm6-8">18時～20時</option>
+            </select>
         </div>
         <p class="mt-3">その他ご要望</p>
         <div>
