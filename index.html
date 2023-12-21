@@ -297,12 +297,14 @@
 
         $(function () {
             $('form').submit(function () {
+                const ken    = $('input[name="ken"]').val();
                 const name    = $('input[name="name"]').val();
-                const udetate = $('input[name="udetate"]').val();
-                const fukkin  = $('input[name="fukkin"]').val();
-                const haikin  = $('input[name="haikin"]').val();
-                const sukuwat = $('input[name="sukuwat"]').val();
-                const msg = `${name}\n${udetate}\n${fukkin}\n${haikin}\n${sukuwat}`;
+                const date1 = $('input[name="month1"]').val() + '/' + $('input[name="day1"]').val() + '/' +$('input[name="hour1"]').val();
+                const date2 = $('input[name="month1"]').val() + '/' + $('input[name="day1"]').val() + '/' +$('input[name="hour1"]').val();
+                const date3 = $('input[name="month1"]').val() + '/' + $('input[name="day1"]').val() + '/' +$('input[name="hour1"]').val();
+                const sonota  = $('input[name="sonota"]').val();
+                const tel = $('input[name="tel"]').val();
+                const msg = `${ken}\n${name}\n${date1}\n${date2}\n${date3}\n${sonota}\n${tel}`;
                 sendText(msg);
                 return false;
             });
