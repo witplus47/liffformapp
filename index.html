@@ -265,7 +265,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script charset="utf-8" src="https://static.line-scdn.net/liff/edge/2.1/sdk.js"></script>
     <script>
-
+    
         $(document).ready(function () {
             const liffId = "2001788752-1jeGqyr0";
             initializeLiff(liffId);
@@ -294,10 +294,10 @@
 
         const params = (new URL(document.location)).searchParams;
         const key = params.get('key');
-
+        
         $(function () {
             $('form').submit(function () {
-                const ken = $('input[name="ken"]').val();
+                const ken = $('document.getElementByName('ken')').val();
                 const name = $('input[name="name"]').val();
                 const date1 = $('input[name="month1"]').val() + '/' + $('input[name="day1"]').val() + '/' +$('input[name="hour1"]').val();
                 const date2 = $('input[name="month1"]').val() + '/' + $('input[name="day1"]').val() + '/' +$('input[name="hour1"]').val();
