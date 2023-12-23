@@ -304,7 +304,7 @@
                 const date3 = $('select[name="month1"]').val() + '/' + $('select[name="day1"]').val() + '/' +$('select[name="hour1"]').val();
                 const sonota  = $('input[name="sonota"]').val();
                 const tel = $('input[name="tel"]').val();
-                const msg = `${ken}\n${name}\n${date1}\n${date2}\n${date3}\n${sonota}\n${tel}`;
+                const msg = `${ken}\n${name}\n${date1}\n${date2}\n${date3}\n${sonota}\n${tel}\n\n訪問予約のご希望について、承りました！\n担当よりご連絡いたします。`;
                 sendText(msg);
                 return false;
             });
