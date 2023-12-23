@@ -296,13 +296,12 @@
         const key = params.get('key');
         
         $(function () {
-            let select-ken = document.querySelector('#ken');
             $('form').submit(function () {
-                const ken = $('select-ken[name="ken"]').val();
+                const ken = $('select[name="ken"]').val();
                 const name = $('input[name="name"]').val();
-                const date1 = $('input[name="month1"]').val() + '/' + $('input[name="day1"]').val() + '/' +$('input[name="hour1"]').val();
-                const date2 = $('input[name="month1"]').val() + '/' + $('input[name="day1"]').val() + '/' +$('input[name="hour1"]').val();
-                const date3 = $('input[name="month1"]').val() + '/' + $('input[name="day1"]').val() + '/' +$('input[name="hour1"]').val();
+                const date1 = $('select[name="month1"]').val() + '/' + $('select[name="day1"]').val() + '/' +$('select[name="hour1"]').val();
+                const date2 = $('select[name="month1"]').val() + '/' + $('select[name="day1"]').val() + '/' +$('select[name="hour1"]').val();
+                const date3 = $('select[name="month1"]').val() + '/' + $('select[name="day1"]').val() + '/' +$('select[name="hour1"]').val();
                 const sonota  = $('input[name="sonota"]').val();
                 const tel = $('input[name="tel"]').val();
                 const msg = `${ken}\n${name}\n${date1}\n${date2}\n${date3}\n${sonota}\n${tel}`;
