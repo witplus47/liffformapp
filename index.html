@@ -296,8 +296,8 @@
         const key = params.get('key');
         
         $(function () {
+            let select-ken = document.querySelector('#ken');
             $('form').submit(function () {
-                let select-ken = document.querySelector('#ken');
                 const ken = $('select-ken[name="ken"]').val();
                 const name = $('input[name="name"]').val();
                 const date1 = $('input[name="month1"]').val() + '/' + $('input[name="day1"]').val() + '/' +$('input[name="hour1"]').val();
