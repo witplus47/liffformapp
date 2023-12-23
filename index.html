@@ -15,7 +15,7 @@
     <form class="w-75 mx-auto" action="https://script.google.com/macros/s/AKfycbz4WcP7cjv0Olhk7pXeVdc-9DaDjlyLMEi6Ukk_s8ziwim2stVY3NB7mAj0-J_M0GiY/exec" method="post">
         <p class="mt-3">お住いのご住所を選んでください</p>
         <div>
-            <select class="form-select form-select-lg mb-3" aria-label="Default select example" id="ken" style="width:25%;">
+            <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="ken" style="width:25%;">
                 <option value="ホッカイドウ">北海道</option>
                 <option value="アオモリ">青森県</option>
                 <option value="イワテ">岩手県</option>
@@ -297,8 +297,8 @@
         
         $(function () {
             $('form').submit(function () {
-                var select-ken = $('document.getElementById('ken')');
-                const ken = $('select-ken').val();
+                let select-ken = document.querySelector('#ken');
+                const ken = $('select-ken[name="ken"]').val();
                 const name = $('input[name="name"]').val();
                 const date1 = $('input[name="month1"]').val() + '/' + $('input[name="day1"]').val() + '/' +$('input[name="hour1"]').val();
                 const date2 = $('input[name="month1"]').val() + '/' + $('input[name="day1"]').val() + '/' +$('input[name="hour1"]').val();
