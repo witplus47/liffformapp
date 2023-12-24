@@ -13,7 +13,7 @@
         訪問日時のご希望を承ります。
     </h3>
     <form class="w-75 mx-auto" action="https://script.google.com/macros/s/AKfycbz4WcP7cjv0Olhk7pXeVdc-9DaDjlyLMEi6Ukk_s8ziwim2stVY3NB7mAj0-J_M0GiY/exec" method="post">
-        <p class="mt-3">お住いのご住所を選んでください</p>
+        <p class="mt-3">お住いのご住所を選んでください<span style="color:#ff0000;">（※必須）</span></p>
         <div>
             <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="ken" style="width:25%;">
                 <option value="北海道">北海道</option>
@@ -69,7 +69,7 @@
         <div>
             <input class="form-control w-100 mt-1" name="name" placeholder="" required>
         </div>
-        <p class="mt-3">第１希望日時</p>
+        <p class="mt-3">第１希望日時<span style="color:#ff0000;">（※必須）</span></p>
         <div>
             <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="month1" style="width:25%;">
                 <option value="1">1月</option>
@@ -128,7 +128,7 @@
                 <option value="pm6-8">18時～20時</option>
             </select>
         </div>
-        <p class="mt-3">第２希望日時</p>
+        <p class="mt-3">第２希望日時（※任意）</p>
         <div>
             <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="month2" style="width:25%;">
                 <option value="1">1月</option>
@@ -187,7 +187,7 @@
                 <option value="pm6-8">18時～20時</option>
             </select>
         </div>
-        <p class="mt-3">第３希望日時</p>
+        <p class="mt-3">第３希望日時（※任意）</p>
         <div>
             <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="month3" style="width:25%;">
                 <option value="1">1月</option>
@@ -246,7 +246,7 @@
                 <option value="pm6-8">18時～20時</option>
             </select>
         </div>
-        <p class="mt-3">その他ご要望<span style="color:#ff0000;">（※任意）</span></p>
+        <p class="mt-3">その他ご要望（※任意）</p>
         <div>
             <input class="form-control w-100 mt-1" name="sonota">
         </div>
@@ -304,7 +304,7 @@
                 const date3 = $('select[name="month1"]').val() + '/' + $('select[name="day1"]').val() + '/' +$('select[name="hour1"]').val();
                 const sonota  = $('input[name="sonota"]').val();
                 const tel = $('input[name="tel"]').val();
-                const msg = `${ken}\n${name}\n${date1}\n${date2}\n${date3}\n${sonota}\n${tel}\n\n訪問予約のご希望日時について、\n承りました！\n\n担当よりご連絡いたします。`;
+                const msg = `【訪問希望日】\n\n居住地：${ken}\nお名前：${name}\n第一希望日：${date1}\n第二希望日：${date2}\n第三希望日：${date3}\nその他ご要望：${sonota}\n連絡先の電話番号：${tel}`;
                 sendText(msg);
                 return false;
 
