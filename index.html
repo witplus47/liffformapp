@@ -239,11 +239,11 @@
             </select>
             &nbsp;&nbsp;
             <select class="form-select form-select-lg mb-3" aria-label="Default select example" name="hour3" style="width:35%;">
-                <option value="am">午前中</option>
-                <option value="pm0-2">12時～14時</option>
-                <option value="pm2-4">14時～16時</option>
-                <option value="pm4-6">16時～18時</option>
-                <option value="pm6-8">18時～20時</option>
+                <option value="午前中">午前中</option>
+                <option value="12時-14時">12時～14時</option>
+                <option value="14時-16時">14時～16時</option>
+                <option value="16時-18時">16時～18時</option>
+                <option value="18時-20時">18時～20時</option>
             </select>
         </div>
         <p class="mt-3">その他ご要望（※任意）</p>
@@ -299,9 +299,9 @@
             $('form').submit(function () {
                 const ken = $('select[name="ken"]').val();
                 const name = $('input[name="name"]').val();
-                const date1 = $('select[name="month1"]').val() + '/' + $('select[name="day1"]').val() + '/' +$('select[name="hour1"]').val();
-                const date2 = $('select[name="month1"]').val() + '/' + $('select[name="day1"]').val() + '/' +$('select[name="hour1"]').val();
-                const date3 = $('select[name="month1"]').val() + '/' + $('select[name="day1"]').val() + '/' +$('select[name="hour1"]').val();
+                const date1 = $('select[name="month1"]').val() + '/' + $('select[name="day1"]').val() + '　' +$('select[name="hour1"]').val();
+                const date2 = $('select[name="month1"]').val() + '/' + $('select[name="day1"]').val() + '　' +$('select[name="hour1"]').val();
+                const date3 = $('select[name="month1"]').val() + '/' + $('select[name="day1"]').val() + '　' +$('select[name="hour1"]').val();
                 const sonota  = $('input[name="sonota"]').val();
                 const tel = $('input[name="tel"]').val();
                 const msg = `【訪問希望日】\n\n居住地：${ken}\nお名前：${name}\n第一希望日：${date1}\n第二希望日：${date2}\n第三希望日：${date3}\nその他ご要望：${sonota}\n連絡先の電話番号：${tel}`;
