@@ -304,7 +304,7 @@
                 const date3 = $('select[name="month1"]').val() + '/' + $('select[name="day1"]').val() + '　' +$('select[name="hour1"]').val();
                 const sonota  = $('input[name="sonota"]').val();
                 const tel = $('input[name="tel"]').val();
-                const msg = `【訪問希望日】\n\n居住地：${ken}\nお名前：${name}\n第一希望日：${date1}\n第二希望日：${date2}\n第三希望日：${date3}\nその他ご要望：${sonota}\n連絡先の電話番号：${tel}`;
+                const msg = `【訪問のご希望日時】\n\n居住地：${ken}\nお名前：${name}\n第一希望日：${date1}\n第二希望日：${date2}\n第三希望日：${date3}\nその他ご要望：${sonota}\n連絡先の電話番号：${tel}`;
                 sendText(msg);
                 return false;
 
